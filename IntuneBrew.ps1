@@ -472,7 +472,7 @@ function Add-IntuneAppLogo {
         else {
             # Try to download from repository
             $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
-            $logoUrl = "https://github.com/paul0x1/IntuneBrew/blob/testing/Logos/$logoFileName"
+            $logoUrl = "https://raw.githubusercontent.com/paul0x1/IntuneBrew/refs/heads/main/testing/Logos/$logoFileName"
             Write-Host "Downloading logo from: $logoUrl" -ForegroundColor Gray
             
             # Download the logo
@@ -706,7 +706,7 @@ if ($LocalFile) {
 }
 
 # Fetch supported apps from GitHub repository
-$supportedAppsUrl = "https://github.com/paul0x1/IntuneBrew/blob/testing/supported_apps.json"
+$supportedAppsUrl = "https://raw.githubusercontent.com/paul0x1/IntuneBrew/refs/heads/testing/supported_apps.json"
 $githubJsonUrls = @()
 
 try {
@@ -866,7 +866,7 @@ function Is-ValidUrl {
         [string]$url
     )
 
-    if ($url -match "^https://github.com/paul0x1/IntuneBrew/blob/testing/Apps/.*\.json$") {
+    if ($url -match "^https://raw.githubusercontent.com/paul0x1/IntuneBrew/main/Apps/.*\.json$") {
         return $true
     }
     else {
