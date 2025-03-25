@@ -865,7 +865,7 @@ function Is-ValidUrl {
     param (
         [string]$url
     )
-
+    if (1 -eq 1) {
     #if ($url -match '^https://raw\.githubusercontent\.com/paul0x1/IntuneBrew/main/Apps/.*\.json$') {
         return $true
     }
