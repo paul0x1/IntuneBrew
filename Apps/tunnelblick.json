@@ -3,7 +3,7 @@
     "description": "Opensource VPN client",
     "version": "6.0.1",
     "url": "https://www.tunnelblick.net/iprelease/Tunnelblick_6.0.1_build_6161.dmg",
-    "bundleId": "com.tunnelblick.tunnelblick",
+    "bundleId": "net.tunnelblick.tunnelblick",
     "homepage": "https://www.tunnelblick.net/",
     "fileName": "Tunnelblick_6.0.1_build_6161.dmg",
     "type": "app",
